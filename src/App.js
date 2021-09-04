@@ -36,8 +36,6 @@ function App() {
           <Route path="/">
             <HomePage />
           </Route>
-
-          np
         </Switch>
         
       </div>

@@ -16,11 +16,11 @@ import adobeXd from "../images/skills_img/adobe_xd.png";
 
 function Skills () {
     return (
-        <div>
+        <div className="container">
             <h2 className="mt-5 mx-5">Frontend &amp; Backend</h2>
             <p className="mt-2 mx-5">Languages I used on daily</p>
 
-            <Card className="container"> 
+            <Card> 
                 <div className="row d-flex py-5">
                     <div className="col-md-3 px-5">
                         <Card.Img src={js} style={{width: "50%"}}/>
@@ -62,7 +62,7 @@ function Skills () {
             <h2 className="mt-5 mx-5">Development Tools</h2>
             <p className="mt-2 mx-5">Software I use for designing and stay productive</p>
 
-            <Card className="container mb-5"> 
+            <Card className="mb-5"> 
                 <div className="row d-flex py-5">
                     <div className="col-md-3 px-5">
                         <Card.Img src={adobeXd} style={{width: "50%"}}/>

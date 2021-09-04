@@ -8,26 +8,20 @@ import medium3 from "../images/top_11_tips.jpg";
 import medium4 from "../images/send_email_reactjs.jpg";
 import medium5 from "../images/npm_tricks.jpg";
 import medium6 from "../images/python_script.jpg" 
+import BingMapsReact from "bingmaps-react";
 
 function AboutMe () {
     console.log()
     return (
         <React.Fragment>
-        <Card className="m-5">
-            <div className="container">
+        <div className="container">
+            <Card className="my-5 p-5">
                 <div className="row">
-                    <div className="col-md-4">
-                        <Card.Img 
-                        src={tenish_img}
-                        style={
-                            {height: "200px",
-                            width: "150px"}}
-                        className="p-3"    >
-
-                        </Card.Img>
+                    <div className="col-md-5">
+                        <Card.Img src={tenish_img} style={{height: "350px", width: "280px"}}className="p-3"></Card.Img>
 
                     </div>
-                    <div className="col-md-8 p-3">
+                    <div className="col-md-7 p-3">
                         <Card.Text><b>Name:</b> Tenish</Card.Text>
                         <Card.Text><b>Profile:</b> Full Stack Developer</Card.Text>
                         <Card.Text><b>Email:</b> Tenish02@gmail.com</Card.Text>
@@ -37,22 +31,37 @@ function AboutMe () {
 
                     </div>
                     <div className="col-md-10 p-3">
-                        <Card.Title><b>About Me</b></Card.Title>
+                        <Card.Title><b>Short Biography</b></Card.Title>
+                        <Card.Text>
+                        I'm 19, born and raised in Penang Malaysia. I have interesting in building new and cool stuff.
+                        </Card.Text>
+                        
+                        <Card.Title><b>Carrer Summary</b></Card.Title>
                         <Card.Text>
                         I am currently persuading in Software Engineering course. 
                         Eager to learn more about programming languages and help people with my knowledge. 
+                        While studying I also working as freelancer in Wondernica Technologies Sdn Bhd as a Software Engineer.
+                        </Card.Text>
+
+                        <Card.Title><b>Philosophy Statement</b></Card.Title>
+                        <Card.Text>
+                        Software development is considered a field ruled by logic. 
+                        Every decision we make is guided by rules that we can follow and understand. 
+                        Every problem has an engineering solution. Every opinion can be either true or false.
                         </Card.Text>
                         
 
                     </div>
                 </div>
-            </div>
-       </Card>
+            </Card>
+       </div>
 
-       <div>
-           <h2 className="text-center">Articles</h2>
-           <p className="text-center">Articles written by me in Medium</p>
-           <div className="container my-5">
+
+
+       <div className="container">
+           <h2 >Articles</h2>
+           <p >Articles written by me in Medium</p>
+           <div className="my-5">
                <div className="row">
                    <div className="col-md-4 my-2">
                        <Card>
@@ -84,7 +93,7 @@ function AboutMe () {
                    </div>
                </div>
            </div>
-           <div className="container my-5">
+           <div className="my-5">
                <div className="row">
                    <div className="col-md-4 my-2">
                        <Card>
@@ -115,6 +124,23 @@ function AboutMe () {
 
                    </div>
                </div>
+           </div>
+           
+           <div className="container my-4">
+               <h2 className="mt-5">Hometown</h2>
+               <p>Bukit Mertajam (Mukim 15)</p>
+                <BingMapsReact
+                        bingMapsKey="your bing maps API key goes here"
+                        height="500px"
+                        mapOptions={{
+                            navigationBarMode: "square",
+                        }}
+                        width="100%"
+                        viewOptions={{
+                            center: { latitude: 5.3655, longitude: 100.4590 },
+                            mapTypeId: "road",
+                        }}
+                        />
            </div>
 
        </div>

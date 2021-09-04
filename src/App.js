@@ -1,7 +1,6 @@
 import React from "react";
 import TopNav from "./TopNav";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import "./App.css";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
@@ -37,9 +36,9 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
-        
       </div>
     </Router>
+    
 
     
   );
